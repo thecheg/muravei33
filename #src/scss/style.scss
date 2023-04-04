@@ -1951,7 +1951,9 @@ svg {
 }
 
 .contacts {
-	overflow:hidden;
+	&--ind {
+		overflow:hidden;
+	}
 
 	&__descr {
 		margin-bottom:50px;
