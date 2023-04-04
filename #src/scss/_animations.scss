@@ -1,0 +1,104 @@
+.onscroll {
+
+	& .head {
+		&:before {
+			transition:all 1s var(--onscroll-func);
+			will-change:width;
+		}
+
+		/*&__title {
+			transition:all 1s var(--onscroll-func);
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+			will-change:transform, clip-path;
+		}*/
+	}
+
+	&:not(&--in) .head {
+		&:before {
+			width:0;
+		}
+
+		/*&__title {
+			transform:translateX(var(--onscroll-off));
+			clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+		}*/
+	}
+
+	& [data-onscroll] {
+		--delay:0s;
+		transition:all 1s var(--onscroll-func);
+		transition-delay:var(--delay);
+		will-change:transform, clip-path, opacity;
+	}
+
+	& [data-onscroll-fade] {
+		opacity:1;
+	}
+
+	& [data-onscroll-up],
+	& [data-onscroll-down],
+	& [data-onscroll-left],
+	& [data-onscroll-right] {
+		transform:none;
+	}
+
+	& [data-onscroll-clip-up],
+	& [data-onscroll-clip-down],
+	& [data-onscroll-clip-left],
+	& [data-onscroll-clip-right] {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+
+	&:not(&--in) {
+		& [data-onscroll-fade] {
+			opacity:0;
+		}
+
+		& [data-onscroll-up] {
+			transform:translateY(var(--onscroll-off));
+		}
+
+		& [data-onscroll-down] {
+			transform:translateY(calc(var(--onscroll-off) * -1));
+		}
+
+		& [data-onscroll-left] {
+			transform:translateX(var(--onscroll-off));
+		}
+
+		& [data-onscroll-right] {
+			transform:translateX(calc(var(--onscroll-off) * -1));
+		}
+
+		& [data-onscroll-clip-left] {
+			clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+		}
+
+		& [data-onscroll-clip-right] {
+			clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+		}
+
+		& [data-onscroll-clip-up] {
+			clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+		}
+
+		& [data-onscroll-clip-down] {
+			clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+		}
+	}
+}
+/*
+.app {
+	& .header {
+		transform:none;
+		transition:all .5s var(--onscroll-func), padding-right 0s;
+	}
+
+	&:not(.app--loaded) {
+		& .header {
+			transform:translateY(-100%);
+		}
+	}
+	
+}*/

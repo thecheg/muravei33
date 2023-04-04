@@ -1,0 +1,81 @@
+.ui {
+	&-btn {
+		--btn-font:18px;
+		--btn-line:22px;
+		--btn-weight:700;
+		--btn-pad:10px 30px;
+		--btn-height:58px;
+		--btn-br:20px;
+
+		background:var(--btn-bg);
+		color:var(--btn-color);
+		border:var(--btn-border) solid 1px;
+		font-size:var(--btn-font);
+		line-height:var(--btn-line);
+		font-weight:var(--btn-weight);
+		min-height:58px;
+		padding:var(--btn-pad);
+		border-radius:var(--btn-br);
+		text-align:center;
+
+		&,
+		&__inner {
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}
+
+		&__inner {
+			width:100%;
+		}
+
+		&__text {
+			display:block;
+			position:relative;
+		}
+
+		&--fw {
+			width:100%;
+		}
+
+		html.no-touch &:hover {
+			color:var(--btn-color-h);
+			background:var(--btn-bg-h);
+			border-color:var(--btn-border-h);
+		}
+
+		&--red {
+			--btn-bg:#{$color-red};
+			--btn-border:#{$color-red};
+			--btn-color:#fff;
+
+			--btn-bg-h:#911f0e;
+			--btn-border-h:#911f0e;
+			--btn-color-h:#fff;
+		}
+
+		&--border-red {
+			--btn-bg:transparent;
+			--btn-border:#{$color-red};
+			--btn-color:#fff;
+
+			--btn-bg-h:#{$color-red};
+			--btn-border-h:#{$color-red};
+			--btn-color-h:#fff;
+		}
+
+		&--border-red2 {
+			--btn-bg:transparent;
+			--btn-border:#{$color-red};
+			--btn-color:#000;
+
+			--btn-bg-h:#{$color-red};
+			--btn-border-h:#{$color-red};
+			--btn-color-h:#fff;
+		}
+	}
+}
+
+button {
+	@include noselect;
+}

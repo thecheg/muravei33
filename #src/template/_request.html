@@ -1,0 +1,56 @@
+			<section class="section request onscroll @@if (context.mod) {@@mod}">
+				<div class="request__lines">
+					<picture>
+						<source srcset="@@webRoot/images/request-lines.webp" type="image/webp">
+						<source srcset="@@webRoot/images/request-lines.png" type="image/png">
+						<img src="@@webRoot/images/request-lines.png" alt="" />
+					</picture>
+				</div>
+				<header class="head head--no-l">
+					<h2 class="head__title request__title" data-onscroll data-onscroll-clip-right data-onscroll-left>
+						Оставьте заявку прямо сейчас и&nbsp;сделайте шаг на&nbsp;встречу здоровью и&nbsp;хорошему настроению!
+					</h2>
+				</header>
+				<div class="container">
+					<div class="ui-grid request__inner">
+						<div class="ui-grid__col request__col" data-onscroll data-onscroll-fade data-onscroll-up style="--delay:.2s;">
+							<div class="request__subttl">
+								В ближайшее время наш менеджер свяжется с&nbsp;Вами и&nbsp;подберёт для&nbsp;Вас наилучшее персональное предложение!
+							</div>
+						</div>
+						<div class="ui-grid__col request__col" data-onscroll data-onscroll-fade data-onscroll-up style="--delay:.4s;">
+							<form class="ui-grid request__form">
+								<div class="ui-grid__col request__form-field request__form-field--f">
+									<fieldset class="ui-field ui-field--grey">
+										<legend class="ui-field__legend">
+											Ваше имя
+										</legend>
+										<input class="ui-field__input" type="text" placeholder="Имя" />
+									</fieldset>
+								</div>
+								<div class="ui-grid__col request__form-field request__form-field--f">
+									<fieldset class="ui-field ui-field--grey">
+										<legend class="ui-field__legend">
+											Ваш телефон
+										</legend>
+										<input class="ui-field__input phone-input" type="text" />
+									</fieldset>
+								</div>
+								<div class="ui-grid__col request__form-field request__form-field--f">
+									<div class="request__agree">
+										Мы гарантируем сохранность Ваших персональных данных.<br />
+										Нажимая наи&nbsp;кнопку Вы подтверждаете свое согласие наи&nbsp;обработку персональных данных
+									</div>
+								</div>
+								<div class="ui-grid__col request__form-field request__form-field--f">
+									<div class="request__btn">
+										<button class="ui-btn ui-btn--red" type="submit">
+											Оставить заявку
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
