@@ -61083,7 +61083,7 @@ const app = {
 			}
 			current.trigger('mouseenter');
 			$('.header .ui-sidemenu').on('mouseleave', function() {
-				current.trigger('mouseenter');
+				//current.trigger('mouseenter');
 			});
 			$(document).on('click', '.header__menu-arr', function() {
 				let item = $(this).closest('.header__menu-item'),
@@ -61165,10 +61165,10 @@ const app = {
 				slidesPerView: 1,
 				spaceBetween: 0,
 				speed: 1000,
-				/*autoplay: {
-					delay:4000,
+				autoplay: {
+					delay: 5000,
 					disableOnInteraction: false
-				},*/
+				},
 				loop: true,
 				loopedSlides: 1,
 				preloadImages: false,

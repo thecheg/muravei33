@@ -4356,12 +4356,24 @@ html.no-touch .subs__trigger:hover {
 	color: #fff;
 	border-radius: 5px;
 	padding: 40px 30px 40px 50px;
+	position: relative;
+	overflow: hidden;
 	--g-gap: 20px;
 }
 
 .subs__full-col {
+	position: relative;
 	--g-cols: 1;
 	--g-of: 2;
+}
+
+.subs__full-img {
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: 0.6;
+	width: 50%;
+	max-width: 400px;
 }
 
 .subs__full-ttl {

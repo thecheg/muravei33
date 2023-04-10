@@ -1827,10 +1827,13 @@ svg {
 		color:#fff;
 		border-radius: 5px;
 		padding:40px 30px 40px 50px;
+		position:relative;
+		overflow:hidden;
 
 		--g-gap:20px;
 
 		&-col {
+			position:relative;
 			--g-cols:1;
 			--g-of:2;
 
@@ -1840,6 +1843,15 @@ svg {
 					align-items: flex-end;flex-direction: column-reverse;
 				}
 			}
+		}
+
+		&-img {
+			position:absolute;
+			right:0;
+			top:0;
+			opacity:.6;
+			width:50%;
+			max-width:400px;
 		}
 
 		&-ttl {
