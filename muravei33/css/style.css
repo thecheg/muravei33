@@ -5583,7 +5583,6 @@ html.no-touch .footer__bot-link:hover {
 	}
 
 	.intro__item {
-		min-height: auto;
 		padding: 120px 0;
 	}
 
@@ -5981,10 +5980,6 @@ html.no-touch .footer__bot-link:hover {
 		top: 16px;
 	}
 
-	.intro {
-		padding-bottom: 60px;
-	}
-
 	.intro__item {
 		padding: calc(var(--header-height) + 50px) 0 50px;
 	}
@@ -5998,12 +5993,11 @@ html.no-touch .footer__bot-link:hover {
 	}
 
 	.intro__pages {
-		position: relative;
-		left: auto;
+		left: 0;
 		top: auto;
-		right: auto;
+		bottom: 20px;
+		right: 0;
 		z-index: 3;
-		margin-top: 20px;
 	}
 
 	.intro__pages-in {
