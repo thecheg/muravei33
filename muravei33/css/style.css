@@ -5073,11 +5073,6 @@ html.no-touch .footer__bot-link:hover {
 		right: 0;
 		background: #E73B22;
 	}
-
-	.coach__photo {
-		position: sticky;
-		top: calc(var(--header-height) + 20px);
-	}
 }
 
 @media only screen and (min-width: 801px) {
@@ -5192,6 +5187,11 @@ html.no-touch .footer__bot-link:hover {
 		width: 85px;
 		height: 1px;
 		background: var(--contacts-grid-line);
+	}
+
+	.coach__photo {
+		position: sticky;
+		top: calc(var(--header-height) + 20px);
 	}
 
 	.club__more {

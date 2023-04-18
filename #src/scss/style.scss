@@ -2285,7 +2285,7 @@ svg {
 		overflow:hidden;
 		max-width:520px;
 		
-		@media only screen and (min-width: 601px) {
+		@media only screen and (min-width: 801px) {
 			position:sticky;
 			top:calc(var(--header-height) + 20px);
 		}
