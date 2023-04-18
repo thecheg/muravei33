@@ -2262,6 +2262,7 @@ svg {
 	&__col {
 		--g-of:2;
 		--g-cols:1;
+		position:relative;
 	}
 
 	&__item {
@@ -2283,6 +2284,11 @@ svg {
 		border-radius:5px;
 		overflow:hidden;
 		max-width:520px;
+		
+		@media only screen and (min-width: 601px) {
+			position:sticky;
+			top:calc(var(--header-height) + 20px);
+		}
 	}
 }
 

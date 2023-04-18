@@ -4746,6 +4746,7 @@ html.no-touch .contacts__item-text a:hover {
 .coach__col {
 	--g-of: 2;
 	--g-cols: 1;
+	position: relative;
 }
 
 .coach__item {
@@ -5071,6 +5072,11 @@ html.no-touch .footer__bot-link:hover {
 	.intro__pages-item.active:before {
 		right: 0;
 		background: #E73B22;
+	}
+
+	.coach__photo {
+		position: sticky;
+		top: calc(var(--header-height) + 20px);
 	}
 }
 
