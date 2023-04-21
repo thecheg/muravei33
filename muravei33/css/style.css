@@ -1423,7 +1423,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	color: var(--page-color);
-	background: #0c0c0c;
+	background: #0F0E0E;
 	font-family: "Exo 2";
 	font-weight: 400;
 	cursor: default;
@@ -1432,9 +1432,9 @@ body {
 }
 
 body[data-color=dark] {
-	--page-bg: #131313;
+	--page-bg: #161616;
 	--page-color: #fff;
-	--page-bg-side: #0c0c0c;
+	--page-bg-side: #0F0E0E;
 	--contacts-grid-line: #565252;
 }
 
@@ -2589,6 +2589,7 @@ html.no-touch .ui-video {
 	--feat-nmbr: rgba(231, 59, 34, 0.15);
 	-webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
 	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+	border: #363636 solid 2px;
 }
 
 .ui-feature--white {
@@ -3608,9 +3609,9 @@ html.no-touch .ui-contacts a:hover {
 	left: 0;
 	top: 0;
 	height: var(--header-height);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #0C0C0C), to(rgba(12, 12, 12, 0.02)));
-	background: -o-linear-gradient(top, #0C0C0C 50%, rgba(12, 12, 12, 0.02) 100%);
-	background: linear-gradient(180deg, #0C0C0C 50%, rgba(12, 12, 12, 0.02) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #0F0E0E), to(rgba(15, 14, 14, 0.02)));
+	background: -o-linear-gradient(top, #0F0E0E 50%, rgba(15, 14, 14, 0.02) 100%);
+	background: linear-gradient(180deg, #0F0E0E 50%, rgba(15, 14, 14, 0.02) 100%);
 	color: #fff;
 }
 
@@ -4296,11 +4297,12 @@ html.no-touch .subs__trigger:hover {
 }
 
 .subs__item-l {
-	background: #0c0c0c;
+	background: #0F0E0E;
 	padding: 27px 20px 55px;
 	border-radius: 10px;
 	font-size: 20px;
 	line-height: 1.6em;
+	border: #363636 solid 2px;
 }
 
 .subs__item-period {
@@ -4352,7 +4354,7 @@ html.no-touch .subs__trigger:hover {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	background: #070606;
+	background: #0F0E0E;
 	color: #fff;
 	border-radius: 5px;
 	padding: 40px 30px 40px 50px;

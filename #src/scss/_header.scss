@@ -4,7 +4,7 @@
 	left:0;
 	top:0;
 	height:var(--header-height);
-	background: linear-gradient(180deg, #0C0C0C 50%, rgba(12, 12, 12, 0.02) 100%);
+	background: linear-gradient(180deg, $color-dark 50%, rgba($color-dark, .02) 100%);
 	color:#fff;
 
 	&:before {
@@ -54,10 +54,6 @@
 			display:flex;
 			align-items:center;
 			gap:32px;
-
-			&-item {
-
-			}
 
 			&-link {
 				display:flex;
@@ -221,10 +217,6 @@
 	&__menu {
 		position:relative;
 		max-width:450px;
-		
-		&-list {
-
-		}
 
 		&-item {
 			display:flex;
