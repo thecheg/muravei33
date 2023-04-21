@@ -158,7 +158,7 @@ button {
 	--cont-p: 20px;
 	--page-gap: 40px;
 	--page-side: 305px;
-	--page-menu-gap: 32px;
+	--page-menu-gap: 24px;
 	--header-height: 110px;
 	--onscroll-off: 40px;
 	--onscroll-func: ease;
@@ -1412,7 +1412,7 @@ body {
 	--page-bg-side: #E9E9E9;
 	--page-color: #000;
 	--page-menu-color: var(--page-color);
-	--page-menu-color-h: #565252;
+	--page-menu-color-h: #7e7e7e;
 	--page-menu-color-a: var(--page-menu-color);
 	--contacts-grid-line: #B4B4B4;
 	-webkit-text-size-adjust: 100%;

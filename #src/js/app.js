@@ -244,7 +244,7 @@ const app = {
 		let sticky = block.find('.ui-layout__side-in');
 
 		$(window).on('resize', function() {
-			let stickyHeight = sticky.outerHeight() + 40 + app.settings.scrollOffset;
+			let stickyHeight = sticky.outerHeight() + 40 + app.settings.scrollOffset();
 
 			if (stickyHeight >= app.settings.winHeight) {
 				sticky.addClass('static');
