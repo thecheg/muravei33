@@ -453,11 +453,6 @@ app.init = () => {
 		}
 	});
 
-	// * Smooth scroll
-	if (!app.scroll.inited) {
-		app.scroll.init();
-	}
-
 	// * Tabs
 	$('.ui-tabs').not('.custom').each(function () {
 		if (!$(this).data('tabsInit')) {
@@ -625,4 +620,9 @@ $(window).on('load', function () {
 		$(document).trigger('app.loaded');
 		$(window).trigger('scroll');
 	}, 300);
+
+	// * Smooth scroll
+	if (!app.scroll.inited) {
+		app.scroll.init();
+	}
 });
