@@ -2848,7 +2848,8 @@ html.no-touch .ui-sidemenu:hover .ui-sidemenu__link:after {
 	bottom: 0;
 }
 
-.ui-card__img img {
+.ui-card__img img,
+.ui-card__img canvas {
 	width: 100%;
 	height: 100%;
 	-o-object-fit: cover;
@@ -3509,12 +3510,14 @@ html.no-touch .ui-pager__item:is(a):hover {
 }
 
 .ui-socials {
-	--soc-gap: var(--page-gap);
+	--soc-gap: 30px;
 	--soc-br: 5px;
 	--soc-size: 30px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 	gap: var(--soc-gap);
 }
 
@@ -3524,6 +3527,8 @@ html.no-touch .ui-pager__item:is(a):hover {
 	aspect-ratio: 1/1;
 	position: relative;
 	border-radius: var(--soc-br);
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
 }
 
 .ui-socials__item:before {

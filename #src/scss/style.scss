@@ -800,7 +800,8 @@ svg {
 				bottom:0;
 			}
 
-			& img {
+			& img,
+			& canvas {
 				@include imgCover;
 			}
 
@@ -1411,11 +1412,12 @@ svg {
 	}
 
 	&-socials {
-		--soc-gap:var(--page-gap);
+		--soc-gap:30px;
 		--soc-br:5px;
 		--soc-size:30px;
 
 		display:flex;
+		flex-wrap:wrap;
 		gap:var(--soc-gap);
 
 		&__item {
@@ -1424,6 +1426,7 @@ svg {
 			aspect-ratio: 1/1;
 			position:relative;
 			border-radius:var(--soc-br);
+			flex-shrink: 0;
 
 			&:before {
 				content:'';
