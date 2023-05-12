@@ -3750,11 +3750,12 @@ html.no-touch .header__logo:hover {
 }
 
 .header__pop {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	top: var(--header-height);
 	right: 0;
-	bottom: 0;
+	height: calc(100vh - var(--header-height));
+	height: calc(var(--vh) * 100 - var(--header-height));
 	background: #0C0C0C;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -3964,6 +3965,8 @@ html.no-touch .header__menu-sublink:hover {
 	-webkit-transform: translate(23.51%, -67.61%);
 	-ms-transform: translate(23.51%, -67.61%);
 	transform: translate(23.51%, -67.61%);
+	max-height: 100%;
+	overflow: hidden;
 }
 
 .header__contacts {
@@ -5494,8 +5497,6 @@ html.no-touch .footer__bot-link:hover {
 	}
 
 	.header__pop {
-		display: block;
-		height: auto;
 		overflow: hidden;
 		overflow-y: auto;
 	}
