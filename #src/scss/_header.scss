@@ -341,12 +341,19 @@
 	&__bg {
 		position:absolute;
 		right:0;
-		top:50%;
+		top:0;
 		width:80%;
-		max-width:1331px;
-		transform:translate(23.51%,-67.61%);
-		max-height:100%;
+		max-width:1155px;
+		height:100%;
 		overflow:hidden;
+
+		&-in {
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0;
+			transform:translate(21.12%,-20.8%);
+		}
 	}
 
 	&__contacts {

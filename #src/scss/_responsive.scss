@@ -113,8 +113,10 @@
 		}
 
 		&__bg {
-			top:0;
-			transform:translateX(23.51%);
+			&-in {
+				top:0;
+				transform:translate(23.51%,-8.66%);
+			}
 		}
 	}
 
