@@ -561,6 +561,23 @@ $.fancybox.defaults.afterClose = function() {
 		$(this).closest('.ui-layout__menu').toggleClass('active');
 	});
 
+	$(window).on('scroll resize', function() {
+		$('.ui-video').each(function() {
+			let block = $(this);
+
+			if (!block.data('videoPlaying')) {
+				if ($(window).scrollTop() + $(window).height() * .7 > block.offset().top) {
+					
+					if (block.find('video').length) {
+						block.find('video').get(0).play();
+					}
+
+					block.data('videoPlaying', true);
+				}
+			}
+		});
+	});
+
 	app.waypoint({
 		position: 1,
 		onDown: function() {
